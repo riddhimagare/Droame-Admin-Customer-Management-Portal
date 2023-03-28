@@ -28,6 +28,8 @@ C. app.py
 
 D. droame.sql
 
+E. Config.json
+
 
 - index.HTML
 
@@ -47,12 +49,16 @@ D. droame.sql
 
       1. app.py is a single main file.
 
-      2. In that all the requird CURD opration are done and all the required functionality are done.
+      2. In that all the required CURD opration are done and all the required functionality are done.
 
 
 - droame.sql
 
       1. droame.sql consisit of database. all the required data in stored into that sql file. 
+
+- config.json
+   
+      1. In config file, all the information about database such as name of database, password, and all required information stored in that. 
 
 
 
@@ -75,6 +81,7 @@ D. droame.sql
       1.  app.py
       2.  index.HTML
       3.  booking.HTML
+      4.  config.json
   
 ## Screenshots
     
