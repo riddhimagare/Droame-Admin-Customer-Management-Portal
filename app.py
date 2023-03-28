@@ -1,14 +1,38 @@
 from flask import Flask, render_template, request, url_for, flash
+
 from werkzeug.utils import redirect
 from flask_mysqldb import MySQL
+from flask_mail import Mail
+import json
 
-
+with open('config.json', 'r') as c:
+    params = json.load(c) ["params"]
+local_server = True
 app = Flask(__name__)
 app.secret_key = 'many random bytes'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'droame'
+app.config.update(
+    MAIL_SERVER = "smtp.gmail.com",
+    MAIL_PORT = "465",
+    MAIL_USE_SSL = True,
+    MAIL_USERNAME = params['gmail-user'],
+    MAIL_PASSWORD = params['gmail-password']
+
+
+)
+
+
+mail = Mail(app)
+if (local_server):
+    app.config["MYSQL_DATABASE_URI"] = params['local_uri']
+else:
+    app.config["MYSQL_DATABASE_URI"] = params['prod_uri']
+
+
+
 
 mysql = MySQL(app)
 
@@ -84,6 +108,10 @@ def booking():
         cur = mysql.connection.cursor()
         cur.execute("INSERT INTO booking (customer_name, customer_email, customer_mo, location_id, drone_shot_id, booking_date) VALUES (%s, %s, %s, %s, %s, %s)", (customer_name, customer_email, customer_mo, location_id, drone_shot_id, booking_date))
         mysql.connection.commit()
+        mail.send_message(' Your drone shot have booked ' + customer_name,
+                           sender = customer_email,
+                           recipients = [params['gmail-user']],
+                           body = "Dear Customer your drone shot has been booked..! ")
         return redirect(url_for('booking'))
     
 #To delete a booked data
