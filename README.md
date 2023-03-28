@@ -84,4 +84,4 @@ E. Config.json
       4.  config.json
   
 ## Screenshots
-!{{Screenshot}}(https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_1.PNG)    
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_1.PNG)   
