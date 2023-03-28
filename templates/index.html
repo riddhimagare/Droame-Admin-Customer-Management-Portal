@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="shortcut icon" href="../static/images/1.png" type="image/x-icon">
   <title>Droame</title>
 </head>
 
@@ -103,7 +104,7 @@
 
         <!-- End of Enter New customer Modal -->
 
-       <!--To Print a customer Data on Server-->
+        <!--To Print a customer Data on Server-->
 
         <table class="table table-hover" id="customer_details">
           <thead>
@@ -168,7 +169,7 @@
                     <div class="form-group">
                       <label>Select Gender</label>
                       <select class="form-control" name="customer_gender" id="" required="1">
-                        <option value="">Select Gender</option>
+                        <option >Select Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Other">Other</option>
@@ -241,24 +242,24 @@
                           id="exampleFormControlInput1" placeholder="Enter Phone Number">
                       </div>
                       <div class="form-group">
-                      <label>Location Id</label>
-                      <input value="{{row.5}}" type="text" name="location_id" class="form-control"
-                        id="exampleFormControlInput1" placeholder="Enter Location Id" required="1">
-                    </div>
+                        <label>Location Id</label>
+                        <input value="{{row.5}}" type="text" name="location_id" class="form-control"
+                          id="exampleFormControlInput1" placeholder="Enter Location Id" required="1">
+                      </div>
 
-                    <div class="form-group">
-                      <label>Drone Short Id</label>
-                      <input value="{{row.6}}" type="text" name="drone_shot_id" class="form-control"
-                        id="exampleFormControlInput1" placeholder="Enter Drone Short Id " required="1">
-                    </div>
+                      <div class="form-group">
+                        <label>Drone Short Id</label>
+                        <input value="{{row.6}}" type="text" name="drone_shot_id" class="form-control"
+                          id="exampleFormControlInput1" placeholder="Enter Drone Short Id " required="1">
+                      </div>
 
-                    <div class="form-group">
-                      <label>Select Booking Date</label>
-                      <input value="{{row.7}}" name="booking_date" type="date" class="form-control"
-                        id="exampleFormControlInput1" placeholder="Enter Booking Date" required="1">
-                    </div>
+                      <div class="form-group">
+                        <label>Select Booking Date</label>
+                        <input value="{{row.7}}" name="booking_date" type="date" class="form-control"
+                          id="exampleFormControlInput1" placeholder="Enter Booking Date" required="1">
+                      </div>
 
-                    <button type="submit" class="btn btn-success mb-2">Book</button>
+                      <button type="submit" class="btn btn-success mb-2">Book</button>
 
                   </form>
 
