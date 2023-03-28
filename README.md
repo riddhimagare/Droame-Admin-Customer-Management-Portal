@@ -84,4 +84,34 @@ E. Config.json
       4.  config.json
   
 ## Screenshots
-![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_1.PNG)   
+-1
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_1.PNG)
+-2
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_2.PNG)
+
+-3
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_3.PNG)
+
+-4
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_4.PNG)
+
+-5
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_5.PNG)
+
+-6
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_6.PNG)
+
+-7
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_7.PNG)
+
+-8
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_8.PNG)
+
+-9
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_9.PNG)
+
+-10
+![[Screenshot]](https://github.com/riddhimagare/Droame-Admin-Customer-Management-Portal/blob/main/Screenshot/SS_10.PNG)
+
+
+
